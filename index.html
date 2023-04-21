@@ -11,7 +11,16 @@
 
     <div id="app">
 
-       
+        <div v-if="(array.length == 0)">
+            <p>non ci sono elementi nella lista</p>
+        </div>
+        <div v-else>
+            <ul>
+                <li>{{array}}</li>
+            </ul>
+        </div>
+
+      
 
         <button @click="createEmail">button</button>
 
