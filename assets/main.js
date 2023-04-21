@@ -13,7 +13,7 @@ const {createApp} = Vue
 createApp({
     data() {
         return {
-          array: []
+          arrayEmail: []
         }
     },
     created(){
@@ -28,7 +28,7 @@ createApp({
                     let showEmail = res.data.response
                     console.log(showEmail)
                     // return showEmail
-                    this.array.push(showEmail)
+                    this.arrayEmail.push(showEmail)
                 })    
                 
             }
