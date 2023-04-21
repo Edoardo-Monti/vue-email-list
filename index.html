@@ -16,7 +16,7 @@
         </div>
         <div v-else-if="arrayEmail.length == 10">
             <ul>
-                <li v-for="(elem) in arrayEmail">{{elem}}</li>
+                <li v-for="(elem, index) in arrayEmail">{{index}} {{elem}}</li>
             </ul>
         </div>
 
