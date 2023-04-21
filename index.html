@@ -12,11 +12,11 @@
     <div id="app">
 
         <div v-if="(array.length == 0)">
-            <p>non ci sono elementi nella lista</p>
+            <p>Clicca il bottone per visualizzare le email</p>
         </div>
         <div v-else>
             <ul>
-                <li>{{array}}</li>
+                <li v-for="(elem) in array">{{elem}}</li>
             </ul>
         </div>
 

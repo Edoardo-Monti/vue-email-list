@@ -27,7 +27,8 @@ createApp({
                 .then( function(res){
                     let showEmail = res.data.response
                     console.log(showEmail)
-                    return showEmail
+                    // return showEmail
+                    
                 })    
                 this.array.push(this.showEmail)
             }
