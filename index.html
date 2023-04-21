@@ -14,7 +14,7 @@
         <div v-if="(arrayEmail.length == 0)">
             <p>Clicca il bottone per visualizzare le email</p>
         </div>
-        <div v-else>
+        <div v-else-if="arrayEmail.length == 10">
             <ul>
                 <li v-for="(elem) in arrayEmail">{{elem}}</li>
             </ul>
